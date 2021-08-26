@@ -1,0 +1,54 @@
+{{>header}}
+{{>navbar}}
+
+<section class="container my-5">
+        <div class="my-3">
+        <a href="/add" class="btn btn-primary">add</a>
+    </div>
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th>accNum</th>
+                <th>name</th>
+                <th>balance</th>
+                <th>age</th>
+                <th>action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#if isEmpty}}
+            <tr>
+                <td>
+                     <td colspan="8" class="alert alert-danger">no users to show</td>
+                </td>
+            </tr>
+            {{/if}}
+            {{#each allcustomers}}
+            <tr>
+                  <td>
+                    {{this.accNum}}
+                </td>
+                <td>
+                    {{this.name}}
+                </td>
+                <td>
+                    {{this.balance}}
+                </td>
+              
+                <td>
+                    {{this.age}}
+                </td>
+                <td>
+                  <a href="edit/{{this._id}}" class="btn btn-secondary">edit</a>
+                    
+                    <form class="form_delete d-inline" method="post" action="delete/{{this._id}}">
+                    <button class="btn btn-danger">delete</button>
+                    </form>
+                    <button class="btn btn-warning">deposite</button>
+                    <button class="btn btn-info">withDrawl</button>
+
+                </td>
+            </tr>
+               {{/each}}
+        </tbody>
+</section>

@@ -1,0 +1,15 @@
+section {
+    margin-top: 40px;
+}
+button#toggle {
+    border: none;
+    background: #607d8b;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px 25px;
+}
+.none{
+    display:none;
+}

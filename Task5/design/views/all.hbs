@@ -1,0 +1,27 @@
+{{>header}}
+{{>nav}}
+<section class="container my-5">
+    <div class="my-3">
+        <a href="/add" class="btn btn-primary">add Task</a>
+    </div>
+        {{#if isEmpty}}
+            <div class="alert alert-danger">no Tasks to show</div>
+         {{/if}}
+       {{#each alltasks}}
+       <ul class="list-group">
+        <li class="list-group-item active" aria-current="true">{{this.title}}</li>
+        <li class="list-group-item">{{this.content}}
+            <div class="d-inline float-xl-right" style="float: right;">
+                <a href="edit/{{this._id}}" class="btn btn-outline-primary">Edit</a>
+                <form method="post" class="d-inline" action="delete/{{this._id}}">
+                <button class="btn btn-outline-danger">Delete</button></form>
+                <a href="single/{{this._id}}" class="btn btn-outline-success">Show</button></a>
+        </li>
+     </ul>
+     <br>
+  {{/each}}
+
+          
+                   
+           
+</section>

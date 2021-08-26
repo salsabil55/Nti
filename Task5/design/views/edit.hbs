@@ -1,0 +1,21 @@
+{{>header}}
+{{>nav}}
+<section class="container my-5">
+    <h3 class="text-primary">Edit</h3>
+
+<form method="post">
+    <div class="mb-3 ">
+        <input name="title" placeholder="title" class="form-control" value="{{task.title}}">
+    </div>
+    <div class="mb-3">
+        <input name="content" placeholder="content" class="form-control" value={{task.content}}>
+    </div>
+
+    <div class="mb-3">
+        <input type="submit" value="add Task" class="btn btn-primary">
+    </div>
+</form>
+
+</section>
+
+{{>footer}}

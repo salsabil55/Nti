@@ -1,0 +1,31 @@
+{
+  "name": "E-Learnning-Project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TasneemYamenIsmail/E-Learnning-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TasneemYamenIsmail/E-Learnning-Project/issues"
+  },
+  "homepage": "https://github.com/TasneemYamenIsmail/E-Learnning-Project#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.7",
+    "multer": "^1.4.3",
+    "nodemailer": "^6.6.3",
+    "validator": "^13.6.0"
+  }
+}

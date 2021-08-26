@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-6">
+            <button id="toggle">Hide Form</button>
+
+            <section id="form" class="container pt-10">
+                <h3>Employee Form</h3>
+                <form>
+                    <input class="form-control mb-4" type="text" placeholder="Enter Name" id="name">
+                    <input class="form-control mb-4" type="number" placeholder="Enter Age" id="age">
+                    <input class="form-control mb-4" type="text" placeholder="Enter Department" id="dept">
+                    <button class="btn btn-primary" id="Save">Save</button>
+                </form>
+            </section>
+        </div>
+        <div class="col-md-6">
+            <section class="container" id="showData">
+                <table class="table" id="dataList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Dept</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                    </tbody>
+        
+                </table>
+            </section>
+        </div>
+    </div>
+   
+    <br>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
